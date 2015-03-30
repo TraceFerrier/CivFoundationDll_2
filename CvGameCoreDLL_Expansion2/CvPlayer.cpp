@@ -403,6 +403,7 @@ CvPlayer::CvPlayer() :
 	, m_iFaithPurchaseIndex(0)
 	, m_bProcessedAutoMoves(false)
 	, m_kPlayerAchievements(*this)
+	, m_isFoundationModInitialized(false)
 {
 	m_pPlayerPolicies = FNEW(CvPlayerPolicies, c_eCiv5GameplayDLL, 0);
 	m_pEconomicAI = FNEW(CvEconomicAI, c_eCiv5GameplayDLL, 0);
@@ -4103,6 +4104,9 @@ void CvPlayer::doTurn()
 	{
 		doTurnPostDiplomacy();
 	}
+
+	// FoundationMod
+	PlayerDoModTurn();
 
 	ICvEngineScriptSystem1* pkScriptSystem = gDLL->GetScriptSystem();
 	if(pkScriptSystem)

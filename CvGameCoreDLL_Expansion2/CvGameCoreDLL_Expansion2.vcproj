@@ -1506,6 +1506,14 @@
 				>
 			</File>
 			<File
+				RelativePath=".\CvSecondFoundationEffects.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\CvSecondFoundationEffects.h"
+				>
+			</File>
+			<File
 				RelativePath=".\CvTraitMods.cpp"
 				>
 			</File>

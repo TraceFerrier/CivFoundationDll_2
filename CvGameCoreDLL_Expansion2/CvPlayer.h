@@ -73,6 +73,10 @@ public:
 	CvPlayer();
 	virtual ~CvPlayer();
 
+	// FoundationMod
+	bool m_isFoundationModInitialized;
+	void PlayerDoModTurn();
+
 	void init(PlayerTypes eID);
 	void setupGraphical();
 	void reset(PlayerTypes eID = NO_PLAYER, bool bConstructorCall = false);

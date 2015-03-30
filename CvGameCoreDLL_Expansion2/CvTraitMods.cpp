@@ -17,47 +17,47 @@ void CvTraitEntry::ApplyTraitMods()
 	{
 		if (handicap == eDeity)
 		{
-			m_iGreatScientistRateModifier = 35;
-			m_iTradeRouteResourceModifier = 35;
+			m_iGreatScientistRateModifier = 30;
+			m_iTradeRouteResourceModifier = 30;
 			m_iLandTradeRouteRangeBonus = 6;
-			m_iTradeReligionModifier = 35;
-			m_iPopulationUnhappinessModifier = -35;
-			m_iWonderProductionModifier = 35;
-			m_iExtraFoundedCityTerritoryClaimRange = 7;
-			m_iCityStateFriendshipModifier = 35;
+			m_iTradeReligionModifier = 30;
+			m_iPopulationUnhappinessModifier = -30;
+			m_iWonderProductionModifier = 30;
+			m_iExtraFoundedCityTerritoryClaimRange = 6;
+			m_iCityStateFriendshipModifier = 30;
 		}
 		else if (handicap == eImmortal)
 		{
-			m_iGreatScientistRateModifier = 25;
-			m_iTradeRouteResourceModifier = 25;
-			m_iLandTradeRouteRangeBonus = 5;
-			m_iTradeReligionModifier = 25;
-			m_iPopulationUnhappinessModifier = -25;
-			m_iWonderProductionModifier = 25;
-			m_iExtraFoundedCityTerritoryClaimRange = 5;
-			m_iCityStateFriendshipModifier = 25;
-		}
-		else if (handicap == eEmperor)
-		{
 			m_iGreatScientistRateModifier = 20;
 			m_iTradeRouteResourceModifier = 20;
-			m_iLandTradeRouteRangeBonus = 4;
+			m_iLandTradeRouteRangeBonus = 5;
 			m_iTradeReligionModifier = 20;
 			m_iPopulationUnhappinessModifier = -20;
 			m_iWonderProductionModifier = 20;
+			m_iExtraFoundedCityTerritoryClaimRange = 5;
+			m_iCityStateFriendshipModifier = 20;
+		}
+		else if (handicap == eEmperor)
+		{
+			m_iGreatScientistRateModifier = 15;
+			m_iTradeRouteResourceModifier = 15;
+			m_iLandTradeRouteRangeBonus = 4;
+			m_iTradeReligionModifier = 15;
+			m_iPopulationUnhappinessModifier = -15;
+			m_iWonderProductionModifier = 15;
 			m_iExtraFoundedCityTerritoryClaimRange = 3;
-			m_iCityStateFriendshipModifier = 25;
+			m_iCityStateFriendshipModifier = 15;
 		}
 		else if (handicap == eKing)
 		{
 			m_iGreatScientistRateModifier = 10;
-			m_iTradeRouteResourceModifier = 10;
+			m_iTradeRouteResourceModifier = 5;
 			m_iLandTradeRouteRangeBonus = 2;
-			m_iTradeReligionModifier = 10;
+			m_iTradeReligionModifier = 5;
 			m_iPopulationUnhappinessModifier = -10;
-			m_iWonderProductionModifier = 10;
-			m_iExtraFoundedCityTerritoryClaimRange = 1;
-			m_iCityStateFriendshipModifier = 10;
+			m_iWonderProductionModifier = 5;
+			m_iExtraFoundedCityTerritoryClaimRange = 2;
+			m_iCityStateFriendshipModifier = 5;
 		}
 		else if (handicap == ePrince)
 		{
@@ -67,7 +67,7 @@ void CvTraitEntry::ApplyTraitMods()
 			m_iTradeReligionModifier = 0;
 			m_iPopulationUnhappinessModifier = 0;
 			m_iWonderProductionModifier = 0;
-			m_iExtraFoundedCityTerritoryClaimRange = 0;
+			m_iExtraFoundedCityTerritoryClaimRange = 2;
 			m_iCityStateFriendshipModifier = 0;
 		}
 		else
@@ -78,7 +78,7 @@ void CvTraitEntry::ApplyTraitMods()
 			m_iTradeReligionModifier = 0;
 			m_iPopulationUnhappinessModifier = 0;
 			m_iWonderProductionModifier = 0;
-			m_iExtraFoundedCityTerritoryClaimRange = 0;
+			m_iExtraFoundedCityTerritoryClaimRange = 2;
 			m_iCityStateFriendshipModifier = 0;
 		}
 	}
@@ -86,14 +86,14 @@ void CvTraitEntry::ApplyTraitMods()
 	{
 		if (handicap == eDeity)
 		{
-			m_piMovesChangeUnitCombats[eCivilianUnitCombat] = 3;
-			m_piMovesChangeUnitCombats[eMeleeUnitCombat] = 3;
+			m_piMovesChangeUnitCombats[eCivilianUnitCombat] = 2;
+			m_piMovesChangeUnitCombats[eMeleeUnitCombat] = 2;
 			m_piMovesChangeUnitCombats[eMountedUnitCombat] = 2;
 			m_piMovesChangeUnitCombats[eArcherUnitCombat] = 2;
 			m_piMovesChangeUnitCombats[eGunUnitCombat] = 2;
-			m_piMovesChangeUnitCombats[eArmorUnitCombat] = 3;
+			m_piMovesChangeUnitCombats[eArmorUnitCombat] = 2;
 			m_piMovesChangeUnitCombats[eSiegeUnitCombat] = 2;
-			m_piMovesChangeUnitCombats[eBomberUnitCombat] = 3;
+			m_piMovesChangeUnitCombats[eBomberUnitCombat] = 2;
 		}
 		else if (handicap == eImmortal)
 		{

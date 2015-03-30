@@ -382,7 +382,7 @@ void CvGame::init(HandicapTypes eHandicap)
 //	--------------------------------------------------------------------------------
 bool CvGame::init2()
 {
-	// Foundation Mod
+	// FoundationMod
 	InitTraitMods();
 	InitBuildingMods();
 	InitPromotionMods();

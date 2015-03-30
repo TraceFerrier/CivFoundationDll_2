@@ -17,6 +17,7 @@
 #include "CvGameCoreUtils.h"
 #include "CvAchievementUnlocker.h"
 #include "CvMinorCivAI.h"
+#include "CvSecondFoundationEffects.h"
 
 #ifdef FINAL_RELEASE
 #define DEBUG_RELEASE_VALUE(a, b) (b)
@@ -240,6 +241,10 @@ void CvPlayerAchievements::BoughtCityState(int iNumUnits)
 //------------------------------------------------------------------------------
 void CvPlayerAchievements::KilledUnitWithUnit(CvUnit* pKillingUnit, CvUnit* pKilledUnit)
 {
+
+	// FoundationMod
+	NotifyModUnitKilled(pKilledUnit);
+
 	if(m_kPlayer.GetID() != GC.getGame().getActivePlayer())
 		return;
 
